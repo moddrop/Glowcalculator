@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 400px;
+            border: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+            border-radius: 10px;
+            background-color: #232323;
+            justify-content: center;
+            padding: 30px;
+            box-shadow: -1px 13px 48px 0px #49FF18;
+            -webkit-box-shadow: -1px 13px 48px 0px #49FF18;
+            -moz-box-shadow: -1px 13px 48px 0px #49FF18;
+            margin: auto;
+        }
+
+        .container>h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+
+        #titl {
+            font-family: 'Courier New', Courier, monospace;
+            color: #FFFFFF;
+            background: black;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+            text-align: center;
+        }
+
+        #num1 {
+            height: 100px;
+            width: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: -1px 13px 48px 0px rgba(0, 0, 0, 0.58);
+            -webkit-box-shadow: -1px 13px 48px 0px rgba(0, 0, 0, 0.58);
+            -moz-box-shadow: -1px 13px 48px 0px rgba(0, 0, 0, 0.58);
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+
+        label {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+
+        #num2 {
+            height: 100px;
+            width: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titl">Simple Java Script Calculator</h1>
+    <br>
+    <br>
+    <br>
+    <form class="container">
+        <h1 id="title">Simple Java Script Calculator</h1>
+        <label for="num1">First Number:</label><br>
+        <input type="number" id="num1" name="number1"><br>
+        <label for="num2">Second Number:</label><br>
+        <input type="number" id="num2" name="number2">
+        <button onclick="addNumbers()">Result</button>
+    </form>
+    <script>
+
+        function changeText() {
+            // Your code here!1
+            document.getElementById('dynamicMessage').innerText = "Hi"
+        }
+        function addNumbers() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num1").value);
+            let sum = num1 + num2;
+            alert("The sum is: " + sum);
+            console.log("Sum: " + sum);
+        }
+
+    </script>
+</body>
+
+</html>
